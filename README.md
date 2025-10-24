@@ -14,6 +14,17 @@ Both tracks are designed to be completed in order. Each lesson builds upon previ
 4. Experiment by modifying the code and observing how changes affect the output.
 
 ## Machine Learning Lesson Overview
+# Machine Learning Sequential Curriculum
+
+This repository now contains a comprehensive, sequential curriculum for learning machine learning with Python. The material is organised as a series of Python lesson files located in the `lessons/` directory. Each lesson can be executed directly to run the embedded demonstrations, while the top-level docstrings and comments explain the theory, workflow, and best practices in depth.
+
+## How to Use the Lessons
+1. Work through the lessons in numerical order (`lesson01` onwards). Each lesson builds upon concepts introduced previously.
+2. Read through the module docstrings and inline comments for explanations and context.
+3. Run the lessons with `python lessons/lessonXX_*.py` to execute the illustrative examples.
+4. Experiment by modifying the code and observing how the changes affect the results.
+
+## Lesson Overview
 - **Lesson 01:** Python and scientific-computing essentials for machine learning.
 - **Lesson 02:** Core numerical tools with NumPy and Pandas.
 - **Lesson 03:** Data preprocessing and exploratory data analysis.
@@ -42,3 +53,4 @@ Both tracks are designed to be completed in order. Each lesson builds upon previ
 - **Lesson 09:** Deployment, monitoring, and operational excellence.
 
 Each MERN lesson README includes objectives, prerequisites, implementation snippets, and exercises to extend the project further.
+Each lesson includes references to additional resources for further study and encourages experimentation to deepen understanding.
