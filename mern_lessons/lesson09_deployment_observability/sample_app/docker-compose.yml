@@ -1,0 +1,22 @@
+version: '3.9'
+services:
+  api:
+    build: ./backend
+    ports:
+      - '4000:4000'
+    environment:
+      - MONGO_URI=${MONGO_URI}
+      - JWT_SECRET=${JWT_SECRET}
+      - JWT_REFRESH_SECRET=${JWT_REFRESH_SECRET}
+    depends_on:
+      - mongo
+  client:
+    build: ./frontend
+    ports:
+      - '5173:80'
+  mongo:
+    image: mongo:7
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:
